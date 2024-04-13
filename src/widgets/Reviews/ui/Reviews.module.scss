@@ -1,0 +1,63 @@
+.Reviews {
+    margin-bottom: 70px;
+}
+
+.top {
+    .title {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .score {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    .button {
+        color: rgb(188, 136, 255);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    .link {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 30px;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        svg {
+            margin-top: 4px;
+        }
+    }
+}
+
+.swiper {
+    .slide {
+        background: none;
+        width: 100%;
+        max-width: 400px;
+        min-height: 200px;
+        text-align: start;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper {
+        .swiper-wrapper {
+            margin-bottom: 10%;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+}

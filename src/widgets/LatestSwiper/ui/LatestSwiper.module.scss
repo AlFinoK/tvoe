@@ -1,0 +1,48 @@
+.LatestSwiper {
+    margin-bottom: 50px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    &:hover {
+        transform: scale(1.04);
+    }
+    .img {
+        border-radius: 50px;
+        margin-bottom: 12px;
+        img {
+            width: 250px;
+            height: 350px;
+
+            object-fit: contain;
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        gap: 1rem;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .description {
+        margin-bottom: 20px;
+    }
+    .slide {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "client",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "api:download": "wget http://localhost:3000/api-yaml -O ./src/shared/api/schema.yaml",
+        "api:generate": "orval"
+    },
+    "dependencies": {
+        "@types/node": "20.8.0",
+        "@types/react": "18.2.24",
+        "@types/react-dom": "18.2.8",
+        "autoprefixer": "10.4.16",
+        "axios": "^1.5.1",
+        "eslint": "8.50.0",
+        "eslint-config-next": "13.5.3",
+        "next": "13.5.3",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-tabs": "^6.0.2",
+        "typescript": "5.2.2"
+    },
+    "devDependencies": {
+        "@svgr/webpack": "^8.1.0",
+        "prettier": "^3.2.5",
+        "sass": "^1.74.1",
+        "swiper": "^11.1.1"
+    }
+}

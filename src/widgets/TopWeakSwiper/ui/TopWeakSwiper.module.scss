@@ -1,0 +1,60 @@
+.TopWeakSwiper {
+    margin-bottom: 70px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    &:first-child {
+        margin-left: 6%;
+    }
+    &:hover {
+        transform: scale(1.04);
+        svg {
+            path {
+                fill: rgb(67, 22, 156);
+            }
+        }
+    }
+    .img {
+        border-radius: 38px;
+        margin-bottom: 12px;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 250px;
+            height: 370px;
+            object-fit: contain;
+        }
+    }
+    .number {
+        z-index: -10;
+        position: absolute;
+        left: -25%;
+        top: 35%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .swiper {
+        .slide {
+            &:first-child {
+                margin-left: 0 !important;
+            }
+            .number {
+                left: 5%;
+            }
+        }
+    }
+    .items {
+        margin-bottom: 20px;
+    }
+}

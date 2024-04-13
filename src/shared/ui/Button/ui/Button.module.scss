@@ -1,0 +1,55 @@
+.Button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+}
+
+.primary {
+    background: var(--button-primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 52px;
+    padding: 12px 20px;
+    border-radius: 16px;
+    width: max-content;
+    transition: all 0.3s ease-out;
+    &:hover {
+        background: var(--hover-button-primary-bg);
+    }
+}
+
+.secondary {
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 52px;
+    min-width: 64px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    transition: all 0.3s ease-out;
+    &:hover {
+        background: var(--hover-button-secondary-bg);
+    }
+}
+
+.clear {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background: none !important;
+    white-space: nowrap;
+    cursor: pointer;
+}

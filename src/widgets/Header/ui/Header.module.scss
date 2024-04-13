@@ -1,0 +1,118 @@
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+    .item {
+        color: var(--gray-color);
+        transition: color 0.3s ease;
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.headerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.headerRightMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+
+    .icon {
+        border-radius: 100px;
+        background: rgba(255, 255, 255, 0.05);
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.navbarMobile {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 100;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    backdrop-filter: blur(20px);
+    background: rgba(9, 9, 12, 0.7);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 28em;
+}
+
+.linkMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 11px;
+    color: var(--gray-color);
+}
+
+.activeLink {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        filter: blur(31px);
+        /* Gradient/Accent */
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(90deg, rgb(106, 17, 203), rgb(37, 117, 252) 100%);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .items {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .header {
+        .logo {
+            img {
+                width: 92px;
+                height: 33px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbarMobile {
+        width: 22em;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .navbarMobile {
+        width: 19em;
+    }
+}

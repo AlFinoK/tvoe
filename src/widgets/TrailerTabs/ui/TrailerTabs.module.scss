@@ -1,0 +1,101 @@
+.TrailerTabs {
+    margin-bottom: 60px;
+}
+
+.tabs {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--gray-color);
+    .list {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .tab {
+        user-select: none;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .selected {
+        color: var(--primary-color);
+        background: none;
+        border: none;
+        border-radius: none;
+    }
+    .panel {
+        .img {
+            margin-bottom: 10px;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        .number {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+        }
+        .watched {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}
+
+.swiper {
+    .slide {
+        background: none;
+        width: 20%;
+        height: 20%;
+        text-align: start;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.04);
+        }
+        .img {
+            position: relative;
+
+            &::after {
+                content: '43:54';
+                position: absolute;
+                color: var(--primary-color);
+                width: 60px;
+                height: 30px;
+                right: 10px;
+                bottom: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 8px;
+                backdrop-filter: blur(20px);
+                background: rgba(9, 9, 12, 0.6);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .slide {
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .tabs {
+        .list {
+            gap: 15px;
+            font-size: 20px;
+        }
+    }
+}

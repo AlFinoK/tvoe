@@ -1,0 +1,42 @@
+@import './globals';
+
+:root {
+    // size
+    --font-size: 16px;
+    // color
+    --primary-color: #ffffff;
+    --gray-color: rgb(186, 186, 186);
+    // bg
+    --bg-color: rgb(9, 9, 12);
+    --grade-bg-color: rgb(38, 116, 251);
+    --button-primary-bg: linear-gradient(90deg, rgb(106, 17, 203), rgb(37, 117, 252) 100%);
+    --button-secondary-bg: rgba(255, 255, 255, 0.05);
+    // hover
+    --hover-button-primary-bg: linear-gradient(90deg, #48078f, #004fd6);
+    --hover-button-secondary-bg: #565656;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
